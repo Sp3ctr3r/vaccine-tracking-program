@@ -175,7 +175,7 @@ class Ui_MainWindow(object):
 
         def delete():
             try:
-                addSSN = ui.socialSecurityNumberLineEdit.text() #SSN = social security number
+                addSSN = ui.socialSecurityNumberLineEdit.text()
 
                 myCursor.execute("delete from my_table where TCNO = '{}'".format(addSSN))
                 connect.commit()
